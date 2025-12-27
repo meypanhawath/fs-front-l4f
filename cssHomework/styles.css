@@ -16,13 +16,11 @@ body {
   background: #f5f7fb;
   color: #222;
   line-height: 1.6;
-  /* Use flexbox to push footer to bottom */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Make main content grow to push footer down */
 main {
   flex: 1;
 }
@@ -62,7 +60,6 @@ main {
   font-weight: 500;
 }
 
-/* Responsive header improvements */
 @media (max-width: 768px) {
   .header-flex {
     padding: 0.5rem 0;
@@ -114,7 +111,6 @@ main {
   }
 }
 
-/* Simple Hero Section */
 .simple-hero {
   padding: 4rem 0;
   background: linear-gradient(135deg, #2563eb, #3b82f6);
@@ -159,7 +155,6 @@ main {
   transform: translateY(-2px);
 }
 
-/* Responsive Hero */
 @media (max-width: 768px) {
   .simple-hero {
     padding: 3rem 0;
@@ -206,35 +201,30 @@ main {
   margin-bottom: 2rem;
 }
 
-/* Responsive Course Grid */
 .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-/* Tablet: 2 cards (600px to 900px) */
 @media (min-width: 600px) and (max-width: 900px) {
   .course-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Large Tablet: 3 cards (901px to 1199px) */
 @media (min-width: 901px) and (max-width: 1199px) {
   .course-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Desktop: 4 cards (1200px and up) */
 @media (min-width: 1200px) {
   .course-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Small mobile adjustments */
 @media (max-width: 599px) {
   .course-grid {
     grid-template-columns: 1fr;
@@ -285,7 +275,6 @@ main {
   color: white;
 }
 
-/* Responsive adjustments for course thumbnails */
 @media (max-width: 768px) {
   .course-thumb {
     height: 150px;
@@ -343,7 +332,6 @@ main {
   color: var(--muted);
 }
 
-/* Responsive text adjustments */
 @media (max-width: 768px) {
   .course-body h3 {
     font-size: 0.95rem;
@@ -399,7 +387,6 @@ main {
   margin-top: 1rem;
 }
 
-/* Responsive meta adjustments */
 @media (max-width: 576px) {
   .course-meta {
     flex-direction: column;
@@ -414,11 +401,9 @@ main {
   color: #ffffff;
   font-size: 0.8rem;
   width: 100%;
-  /* Ensure it stays at bottom */
   margin-top: auto;
 }
 
-/* Responsive footer adjustments */
 @media (max-width: 768px) {
   .site-footer {
     padding: 1.2rem;
@@ -433,7 +418,6 @@ main {
   }
 }
 
-/* Optional: Very large screens adjustments */
 @media (min-width: 1440px) {
   .course-grid {
     gap: 2.5rem;
