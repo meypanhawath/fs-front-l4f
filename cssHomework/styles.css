@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Moulpali&display=swap');
+
 :root {
   --radius: 18px;
   --shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   --primary: #2563eb;
   --muted: #777;
+  --font-en: 'Inter', sans-serif;
+  --font-kh: 'Moulpali', sans-serif;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-en), var(--font-kh), sans-serif;
 }
 
 body {
-  font-family: Inter, sans-serif;
   background: #f5f7fb;
   color: #222;
   line-height: 1.6;
